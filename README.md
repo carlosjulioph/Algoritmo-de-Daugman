@@ -6,4 +6,4 @@ Aquí revisaremos la funcionalidad de este método para la segmentación de regi
 
 La idea es encontrar la mayor caída (delta) en los valores de intensidad entre dos círculos vecinos. Debería implicar la transición entre el iris y su entorno.
 
-![](https://github.com/carlosjulioph/Algoritmo-de-Daugman/blob/main/images_readme/1.png)
+![](https://github.com/carlosjulioph/Algoritmo-de-Daugman/blob/main/images_readme/1.png){:height="50%" width="50%"}
