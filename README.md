@@ -6,4 +6,12 @@ Aquí revisaremos la funcionalidad de este método para la segmentación de regi
 
 La idea es encontrar la mayor caída (delta) en los valores de intensidad entre dos círculos vecinos. Debería implicar la transición entre el iris y su entorno.
 
-<img src="https://github.com/carlosjulioph/Algoritmo-de-Daugman/blob/main/images_readme/1.png" width="800">
+<img src="https://github.com/carlosjulioph/Algoritmo-de-Daugman/blob/main/images_readme/1.png" width="700">
+
+Para revisar cada uno de los pasos del algoritmo puedes ejecutar el notebook <u>`daugman_visual_explicacion.ipynb`</u> 
+
+<img src="https://github.com/carlosjulioph/Algoritmo-de-Daugman/blob/main/images_readme/2.png" width="700">
+
+A través de <u>`Prueba_daugman.py`</u>  realizamos pruebas para analizar precisión,  utilizando una muestra de imágenes del conjunto de datos  **UBIRIS.v1** Este conjunto de datos se compone de 1877 imágenes recopiladas de 241 personas durante septiembre de 2004 en dos sesiones distintas. Su principal característica es el hecho de que, en oposición a las bases de datos públicas y gratuitas existentes (CASIA y UPOL), incorpora imágenes con varios factores de ruido, permitiendo así la evaluación de métodos de reconocimiento de iris de robustez.
+
+Solo se están considerando en la carpeta  <u>`final_image`</u> unas cuantas imágenes de dimesniones 200x150 correspondiente a la región del ojo definida a partir de un proceso de detección en el subconjunto de La sesión_1 , que contiene 1214 imágenes (800x600 pixeles) de 214 personas  diferentes. Para obtener un mejor resultado en la detección de la región del iris la imagen de entrada al algoritmo daugman debe ser de dimensiones cuadradas. Asi que de las imágenes originales se define una región de interes ROI cuadrada de dimensiones 150x150.
