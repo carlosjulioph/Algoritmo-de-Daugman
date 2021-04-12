@@ -17,3 +17,15 @@ A través de <u>`Prueba_daugman.py`</u>  realizamos pruebas para analizar precis
 Solo se están considerando en la carpeta  <u>`final_image`</u> unas cuantas imágenes de dimensiones 200x150 correspondientes a la región del ojo definida a partir de un proceso de detección en el subconjunto de La sesión_1 , que contiene 1214 imágenes (800x600 pixeles) de 214 personas  diferentes. 
 
 Para obtener un mejor resultado en la detección de la región del iris la imagen de entrada al algoritmo daugman debe ser de dimensiones cuadradas. Asi que de las imágenes originales se define una región de interes ROI cuadrada de dimensiones 150x150.
+
+Para la detección de la región de Iris utilizamos la función `find_iris`:
+
+`answer = find_iris(gray_img, daugman_start=10, daugman_end=70, daugman_step=2, points_step=3)`
+
+donde,
+
+- `gray_img`: imagen a escala de grises de dimensiones cuadradas.
+- `daugman_start`: valor inferior en píxeles para el radio del iris.
+- `daugman_end`: valor superior en píxeles para el radio del iris.
+- `daugman_step`: valor en píxeles de paso para el rango de radios del iris.
+- `points_step`: define cada cuantos puntos potenciales se ejecuta daugman.
