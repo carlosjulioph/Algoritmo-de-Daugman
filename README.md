@@ -29,3 +29,5 @@ donde,
 - `daugman_end`: valor superior en píxeles para el radio del iris.
 - `daugman_step`: valor en píxeles de paso para el rango de radios del iris.
 - `points_step`: define cada cuantos puntos potenciales se ejecuta daugman.
+
+La función retorna en `answer`  el circulo con el mayor delta de intensidad en la imagen como una tupla `((xc, yc), radius)`.
