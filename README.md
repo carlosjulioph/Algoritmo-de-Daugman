@@ -32,5 +32,6 @@ donde,
 
 La función retorna en `answer`  el circulo con el mayor delta de intensidad en la imagen como una tupla `((xc, yc), radius)`.
 
-Para más información:
+Podemos consultar información adicional en los siguientes enlaces:
 - [Iris localization using Daugman’s algorithm](https://www.diva-portal.org/smash/get/diva2:831173/FULLTEXT01.pdf)
+- [Study of Different IRIS Recognition Methods](http://www.ijctee.org/files/VOLUME2ISSUE1/IJCTEE_0212_14.pdf)
