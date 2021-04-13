@@ -31,3 +31,6 @@ donde,
 - `points_step`: define cada cuantos puntos potenciales se ejecuta daugman.
 
 La función retorna en `answer`  el circulo con el mayor delta de intensidad en la imagen como una tupla `((xc, yc), radius)`.
+
+Para más información:
+- [Iris localization using Daugman’s algorithm](https://www.diva-portal.org/smash/get/diva2:831173/FULLTEXT01.pdf)
